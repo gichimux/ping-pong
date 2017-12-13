@@ -1,0 +1,13 @@
+.panel-heading {
+  background-color: lightgreen;
+  padding: 5%;
+  text-align: center;
+}
+.text-box {
+  border: 6px black;
+  padding: 30%;
+}
+.jumbotron {
+  width: 70%;
+  background-color: lightblue;
+}
