@@ -19,7 +19,7 @@ var ping = function(aNumber){
 function gameReturn(num){
     var resultArray = [];
     var resultString = "";
-    for(var i = 1; i <= num; i++){
+      for(var i = 1; i <= num; i++){
       if((i % 15) === 0){
         resultArray.push("<li>pingpong</li>");
       }else if((i % 5) === 0){
