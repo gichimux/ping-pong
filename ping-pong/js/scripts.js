@@ -1,10 +1,22 @@
+//user interface
+$(document).ready(function(){
+  $(".submit").click(function(event){
+    event.preventDefault();
+    $("#result").empty();
+    var input = parseInt($("#userInput").val());
+    resultString = gameReturn(input);
+    $("#result").append(resultString);
+  });
+});
+
+
 var ping = function(aNumber){
   return ping-pong;
 };
 }
 
 // Business Logic
-function gameLoop(num){
+function gameReturn(num){
     var resultArray = [];
     var resultString = "";
     for(var i = 1; i <= num; i++){
@@ -21,13 +33,3 @@ function gameLoop(num){
   resultString = resultArray.join('');
     return resultString;
 }
-// User Logic
-$(document).ready(function(){
-  $(".submit").click(function(event){
-    event.preventDefault();
-    $("#result").empty();
-    var input = parseInt($("#userInput").val());
-    resultString = gameLoop(input);
-    $("#result").append(resultString);
-  });
-});
