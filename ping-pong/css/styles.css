@@ -2,6 +2,7 @@
   background-color: lightgreen;
   padding: 5%;
   text-align: center;
+  color: red;
 }
 .text-box {
   border: 6px black;
@@ -10,4 +11,12 @@
 .jumbotron {
   width: 70%;
   background-color: lightblue;
+  color: purple;
+}
+body {
+  background-color: lightyellow;
+}
+#userInput {
+  background-color: red;
+  color: white
 }
